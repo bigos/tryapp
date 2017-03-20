@@ -37,3 +37,9 @@ will go back to normal REPL
 
 Now ClojureScript commands will not work.
 Running (cljs) in REL will change back to ClojureScript.
+
+Obtaining properties, as opposed to running functions
+#+BEGIN_EXAMPLE
+cljs.user> (.-location js/document)
+#object[Location http://localhost:3000/]
+#+END_EXAMPLE
